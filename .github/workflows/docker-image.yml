@@ -20,7 +20,10 @@ jobs:
       
       - name: Set date tag
         run: echo "DATE_TAG=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
-          
+        
+      - name: Printing variable 
+        run: echo $GITHUB_ENV
+        
       - name: Build and push Docker image for the CustomImage 
         uses: docker/build-push-action@v2
         with:
