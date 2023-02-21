@@ -31,4 +31,4 @@ jobs:
         with:
           context: ./customimage1/
           push: true
-          tags: dev06/customnginx1:v1
+          tags: dev06/customnginx1:$(date +%Y%m%d%H%M%S)
